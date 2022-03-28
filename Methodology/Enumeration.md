@@ -7,6 +7,7 @@
   ```
 # Individual Host Scanning
 ```
+   NMAP -sC -sN -A -T4 
    nmap  --top-ports 20 --open -iL iplist.txt
    nmap -sS -A -sV -O -p- ipaddress
    nmap -sU ipaddres
@@ -22,7 +23,6 @@
             gobuster dir -u http://10.10.255.58 -w /home/noob2uub/Documents/Wordlists/common.txt
             gobuster dir -u http://10.10.86.230/island/2100 -w /home/noob2uub/Documents/Wordlists/2.3-big.txt -x .ticket
             gobuster dir -u http://10.10.150.75 -w /home/noob2uub/Documents/Wordlists/2.3-medium.txt -x php,html,txt
-      dirbuster https://411hall.github.io/assets/files/CTF_template.ctb
       wpscan
       dotdotpwn
       view source 
